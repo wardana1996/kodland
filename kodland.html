@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kodland Indonesia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="navbar_container-flex">
+      <div class="navbar_brand">
+        <a href="#">Kodland</a>
+      </div>
+      <div class="navbar_burger">
+        <div class="burger_bar1"></div>
+        <div class="burger_bar2"></div>
+        <div class="burger_bar3"></div>
+      </div>
+      <div class="bg-sidebar"></div>
+      <ul class="sidebar">
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#login">Log In</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="main-section-1">
+    <div class="main-section-1_row">
+      <div class="row_image_1">
+        <div class="image_title_1">POP IT!</div>
+        <div class="image_desc_1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+      </div>
+    </div>
+  </section>
+  <section class="main-section-2">
+    <div class="main-section-2_title">Lorem Ipsum</div>
+    <div class="main-section-2_desc">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis neque, tempor ac consectetur at, pharetra non turpis. Nulla vehicula vestibulum urna ac pellentesque. Fusce at placerat erat. Suspendisse potenti. Nulla quis rhoncus diam, ac porttitor nisi. Sed vel nisi molestie, pellentesque urna et, lobortis sem. Nunc ultrices tellus eget orci molestie, eget euismod mauris placerat. Aenean mauris tellus, ultrices at sodales tincidunt, auctor et neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eget finibus ligula, at elementum quam.
+    </div>
+  </section>
+  <section class="main-section-3">
+    <div class="main-section-3_title">Lorem Ipsum</div>
+    <div class="main-section-3_row">
+      <div class="row_image">
+        <img src="././images/sources/square.png" width="200" height="180"/>
+        <div class="image_title">Rectangle</div>
+        <button class="image_btn">Submit</button>
+      </div>
+      <div class="row_image">
+        <img src="././images/sources/amongus.png" width="200" height="180"/>
+        <div class="image_title">Among Us</div>
+        <button class="image_btn">Submit</button>
+      </div>
+      <div class="row_image">
+        <img src="././images/sources/round.png" width="200" height="180"/>
+        <div class="image_title">Circle</div>
+        <button class="image_btn">Submit</button>
+      </div>
+    </div>
+  </section>
+  <section class="main-section-4">
+    <div class="main-section-4_row">
+      <div class="row_image_2">
+        <div class="image_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+      </div>
+      <div class="row_image_2">
+        <img src="././images/sources/photo.jpg" width="500" height="380"/>
+      </div>
+    </div>
+  </section>
+  <script>
+    const burger = document.querySelector('.navbar_burger')
+    const sidebar = document.querySelector('.sidebar')
+    const bgSidebar = document.querySelector('.bg-sidebar')
+
+    burger.addEventListener('click', function() {
+      this.classList.toggle('change')
+      sidebar.classList.toggle('change')
+      bgSidebar.classList.toggle('change')
+    })
+
+    bgSidebar.addEventListener('click', function() {
+      this.classList.remove('change')
+      sidebar.classList.remove('change')
+      burger.classList.remove('change')
+    })
+  </script>
+</body>
+</html>
